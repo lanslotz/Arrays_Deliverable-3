@@ -13,17 +13,14 @@ namespace Arrays_Deliverable_3
     class Program
     {
         static void Main(string[] args)
-        {   
-            // call local variable for the total amount of numbers in an array
-            int number_of_array = 26;
-            // Automatically populate an array with a number of elements input by the user
-            int[] countdown = new int[number_of_array];
+        {
+            // Manually populate an array with a number of elements input by the user
+            int[] countdown = {1, 2, 3, 4, 5 ,6 ,7 ,8 ,9 ,10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25};
             // call variable pop_array to reset countdown.
-            int pop_array = 0;
+            
             // Iterate through the array using a For Loop
-            for (int i = 1; i < number_of_array; i++)
+            foreach (int i in countdown)
             {
-                countdown[i] = pop_array;
                 //write "Element Value" and the number in array.
                 Console.WriteLine("Element Value = " + i);
             }
